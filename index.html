@@ -24,6 +24,8 @@
 
     <!-- --MY STYLE -->
     <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- --MY RESPONSIVE STYLE -->
+    <link rel="stylesheet" href="./CSS/responsive.css" />
   </head>
 
   <body>
@@ -31,7 +33,51 @@
       <!-- ##APPTOP -->
       <div id="app-top" class="d-flex">
         <!-- #SIDEBAR -->
-        <div id="sidebar">
+        <div id="sidebar" class="d-flex">
+          <img src="./img/logo.svg" alt="Spotify logo" class="logo xs-d-none s-d-block" />
+          <img src="./img/logo-small.svg" alt="Spotify logo" class="logo s-d-none" />
+
+          <div id="home-wrapper" class="top-wrapper d-flex">
+            <img src="./img/home.svg" alt="Home" class="icon" />
+            <div class="label xs-d-none s-d-block">Home</div>
+          </div>
+
+          <div id="search-wrapper" class="top-wrapper d-flex">
+            <img src="./img/search.svg" alt="Find" class="icon" />
+            <div class="label xs-d-none s-d-block">Cerca</div>
+          </div>
+
+          <div id="library-wrapper" class="top-wrapper d-flex">
+            <img src="./img/libreria.svg" alt="My library" class="icon" />
+            <div class="label xs-d-none s-d-block">La tua libreria</div>
+          </div>
+
+          <div id="playlist-wrapper" class="xs-d-none s-d-block">
+            <div class="tab-title">PLAYLIST</div>
+            <div id="create-wrapper" class="d-flex">
+              <img src="./img/square-plus.svg" alt="" class="icon" />
+              <div class="label">Crea Playlist</div>
+            </div>
+            <div class="playlist-item">Nome Playlist molto lungo</div>
+            <div class="playlist-item">Nome Playlist</div>
+            <div class="playlist-item">Nome Playlist</div>
+            <div class="playlist-item">Nome Playlist</div>
+            <div class="playlist-item">Nome Playlist</div>
+            <div class="playlist-item">Nome Playlist</div>
+            <div class="playlist-item">Nome Playlist</div>
+          </div>
+
+          <div id="sidebar-bottom">
+            <div id="install-wrapper" class="d-flex">
+              <img src="./img/download.svg" alt="" class="icon" />
+              <div class="label xs-d-none s-d-block">Installa app</div>
+            </div>
+            <div id="profile-wrapper" class="d-flex">
+              <img src="./img/profile.svg" alt="" class="icon" />
+              <div class="label xs-d-none s-d-block">John Doe</div>
+            </div>
+          </div>
+
           <!-- # END SIDEBAR -->
         </div>
 

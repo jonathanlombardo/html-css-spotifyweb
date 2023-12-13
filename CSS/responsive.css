@@ -1,0 +1,59 @@
+/* ## S VIEW */
+@media screen and (min-width: 576px) {
+  /* ##display */
+  .s-d-none {
+    display: none;
+  }
+
+  .s-d-block {
+    display: block;
+  }
+
+  /* #SIDEBAR */
+
+  /* --top-wrapper */
+  #sidebar .top-wrapper .icon {
+    width: 20%;
+  }
+
+  #sidebar .top-wrapper .label {
+    width: 80%;
+  }
+  /* --playlist-wrapper */
+  #sidebar #playlist-wrapper .icon {
+    width: 30%;
+  }
+
+  #sidebar #playlist-wrapper .label {
+    width: 70%;
+  }
+
+  /* --sidebar-bottom */
+  #sidebar #install-wrapper .icon {
+    width: 10%;
+  }
+
+  #sidebar #install-wrapper .label {
+    width: 90%;
+  }
+
+  #sidebar #profile-wrapper .icon {
+    width: 20%;
+  }
+
+  #sidebar #profile-wrapper .label {
+    width: 80%;
+  }
+}
+
+/* ## LG VIEW */
+@media screen and (min-width: 992px) {
+  /* #SIDEBAR */
+
+  /* --general */
+  #sidebar {
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+    max-width: 230px;
+  }
+}

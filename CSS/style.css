@@ -42,7 +42,8 @@ i {
 :root {
   /* dimension */
   --text-m: 1.5rem;
-  --space-m: 8px;
+  --space-s: 10px;
+  --space-m: 25px;
   --space-l: 50px;
 
   --bottombar-hegth: 100px;
@@ -179,6 +180,16 @@ i {
 
 /* ---------------------------------------- */
 
+/* ##display */
+
+.xs-d-none {
+  display: none;
+}
+
+.xs-d-block {
+  display: block;
+}
+
 /* ##APP TOP */
 
 #app-top {
@@ -188,12 +199,43 @@ i {
 
 /* #SIDEBAR */
 
+/* --general */
 #sidebar {
   background-color: var(--sidebar-color);
-  padding-right: var(--space-l);
+  padding-left: var(--space-s);
+  padding-right: var(--space-s);
+  flex-direction: column;
+  max-width: 200px;
 
   /* debug */
-  width: var(--space-l);
+  min-width: 50px;
+}
+
+#sidebar .label {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* --top-wrapper */
+
+/* ... */
+
+/* --playlist-wrapper */
+#sidebar #playlist-wrapper {
+  flex-shrink: 1;
+  overflow: auto;
+}
+
+#sidebar .playlist-item {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* --sidebar-bottom */
+
+#sidebar #sidebar-bottom {
+  margin-top: auto;
 }
 
 /* ##APP MAIN */
