@@ -7,6 +7,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  color: var(--main-text-color);
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -39,12 +43,15 @@ i {
   /* dimension */
   --text-m: 1.5rem;
   --space-m: 8px;
+  --space-l: 50px;
+
+  --bottombar-hegth: 100px;
 
   /* palette */
   --main-color: #141922;
   --sidebar-color: #000000;
   --topbar-color: #000000;
-  --bottom-bar-color: #282828;
+  --bottombar-color: #282828;
 
   --main-text-color: #ffffff;
   --main-text-color-light: #777777;
@@ -69,6 +76,12 @@ i {
   padding-right: var(--container-padding);
   margin-left: auto;
   margin-right: auto;
+}
+
+.overflow-container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .row {
@@ -165,3 +178,48 @@ i {
 } */
 
 /* ---------------------------------------- */
+
+/* ##APP TOP */
+
+#app-top {
+  background-color: var(--main-color);
+  height: calc(100vh - var(--bottombar-hegth));
+}
+
+/* #SIDEBAR */
+
+#sidebar {
+  background-color: var(--sidebar-color);
+  padding-right: var(--space-l);
+
+  /* debug */
+  width: var(--space-l);
+}
+
+/* ##APP MAIN */
+
+#app-main {
+  overflow: auto;
+  flex-grow: 1;
+}
+
+/* #TOPBAR */
+
+#topbar {
+  position: sticky;
+  top: 0;
+  background-color: var(--topbar-color);
+  opacity: 0.5;
+
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+
+/* #MAINCONTENT */
+
+/* ##BOTTOMBAR */
+
+#bottombar {
+  background-color: var(--bottombar-color);
+  height: var(--bottombar-hegth);
+}
