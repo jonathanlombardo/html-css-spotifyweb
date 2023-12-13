@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -36,16 +36,29 @@ i {
 /* --CUSTOM PROPS */
 
 :root {
+  /* dimension */
   --text-m: 1.5rem;
   --space-m: 8px;
 
-  --li-margin: 1em; /* margini lista FontAwesome */
-  --li-width: 1.5em; /* markerwidth lista FontAwesome */
+  /* palette */
+  --main-color: #141922;
+  --sidebar-color: #000000;
+  --topbar-color: #000000;
+  --bottom-bar-color: #282828;
 
-  --main-color: rgba(255, 0, 0, 0.236);
+  --main-text-color: #ffffff;
+  --main-text-color-light: #777777;
 
+  --main-progress-color: #5a5a5a5a;
+  --secondary-progress-color: #c1c1c1c1;
+
+  /* grid */
   --grid-padding: 1rem;
   --container-padding: calc(var(--grid-padding) + 0px);
+
+  /* fontawesome list */
+  --li-margin: 1em;
+  --li-width: 1.5em;
 }
 
 /* -- GRID PROPS */
