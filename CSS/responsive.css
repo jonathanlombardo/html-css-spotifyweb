@@ -46,6 +46,17 @@
   }
 }
 
+/* ## MD VIEW */
+@media screen and (min-width: 768px) {
+  /* #MAINCONTENT */
+
+  /* --section */
+
+  #main-content section .col {
+    width: calc(100% / 4);
+  }
+}
+
 /* ## LG VIEW */
 @media screen and (min-width: 992px) {
   /* #SIDEBAR */
@@ -55,5 +66,13 @@
     padding-left: var(--space-m);
     padding-right: var(--space-m);
     max-width: 230px;
+  }
+
+  /* #MAINCONTENT */
+
+  /* --section */
+
+  #main-content section .col {
+    width: calc(100% / 6);
   }
 }
