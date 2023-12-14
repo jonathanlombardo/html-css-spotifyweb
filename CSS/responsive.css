@@ -44,6 +44,23 @@
   #sidebar #profile-wrapper .label {
     width: 80%;
   }
+
+  /* ##BOTTOMBAR */
+
+  /* --onair */
+
+  #bottombar .on-air-desc {
+    max-width: 150px;
+  }
+
+  #bottombar .on-air-desc .subtitle {
+    display: inline-block;
+  }
+
+  #bottombar .settings .progress {
+    width: 80px;
+    margin: auto;
+  }
 }
 
 /* ## MD VIEW */
@@ -58,6 +75,11 @@
 
   #bottombar .browse-wrapper {
     display: flex;
+  }
+
+  #bottombar .settings .progress {
+    width: 100px;
+    margin: auto;
   }
 }
 

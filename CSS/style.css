@@ -46,7 +46,7 @@ i {
   --space-m: 25px;
   --space-l: 50px;
 
-  --bottombar-hegth: 100px;
+  --bottombar-hegth: 60px;
 
   /* palette */
   --main-color: #141922;
@@ -328,12 +328,17 @@ i {
 /* ##BOTTOMBAR */
 
 #bottombar {
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: var(--grid-padding);
   align-items: center;
   background-color: var(--bottombar-color);
   height: var(--bottombar-hegth);
-  padding: 20px;
+  padding: 16px;
+
+  font-size: x-small;
 }
+
+/* --onair */
 
 #bottombar .on-air-wrapper {
   align-items: center;
@@ -344,6 +349,45 @@ i {
   height: 100%;
 }
 
-/* .on-air-image {
+#bottombar .on-air-desc {
+  max-width: 100px;
+}
+
+/* --Player */
+
+#bottombar .player {
+  text-align: center;
+  flex-grow: 1;
+}
+
+#bottombar .player .progress-wrapper {
+  max-width: 500px;
+  margin: auto;
+}
+
+#bottombar .player .progress {
+  display: flex;
+  flex-grow: 1;
+}
+
+#bottombar .settings .progress {
   width: 50px;
-} */
+  margin: auto;
+}
+
+#bottombar .progress-empty,
+#bottombar .progress-full {
+  height: 4px;
+}
+
+#bottombar .progress-empty {
+  background-color: var(--main-progress-color);
+  width: 100%;
+  margin: auto;
+}
+
+#bottombar .progress-full {
+  background-color: var(--secondary-progress-color);
+  width: 25%;
+  margin: auto 0;
+}
