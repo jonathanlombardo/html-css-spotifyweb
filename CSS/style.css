@@ -328,6 +328,22 @@ i {
 /* ##BOTTOMBAR */
 
 #bottombar {
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--bottombar-color);
   height: var(--bottombar-hegth);
+  padding: 20px;
 }
+
+#bottombar .on-air-wrapper {
+  align-items: center;
+}
+
+#bottombar .on-air-wrapper,
+#bottombar .on-air-wrapper img {
+  height: 100%;
+}
+
+/* .on-air-image {
+  width: 50px;
+} */

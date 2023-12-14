@@ -55,6 +55,10 @@
   #main-content section .col {
     width: calc(100% / 4);
   }
+
+  #bottombar .browse-wrapper {
+    display: flex;
+  }
 }
 
 /* ## LG VIEW */
