@@ -298,6 +298,7 @@ i {
 #topbar {
   position: sticky;
   top: 0;
+  z-index: 1;
   background-color: var(--topbar-color);
   backdrop-filter: opacity(0.5);
 
@@ -533,7 +534,7 @@ i {
   animation-duration: 265s;
   animation-name: progress;
   animation-fill-mode: backwards;
-  animation-timing-function: steps(265);
+  animation-timing-function: linear;
 }
 
 #bottombar .progress-empty:hover .progress-full::after {
