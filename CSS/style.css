@@ -41,7 +41,9 @@ i {
 
 :root {
   /* dimension */
+  --text-s: 0.7rem;
   --text-m: 1.5rem;
+  --space-xs: 5px;
   --space-s: 10px;
   --space-m: 25px;
   --space-l: 50px;
@@ -307,7 +309,7 @@ i {
 }
 
 #topbar .btn {
-  font-size: 0.7rem;
+  font-size: var(--text-s);
   font-weight: 600;
   text-transform: uppercase;
   background-color: var(--topbar-btn-color);
@@ -321,19 +323,25 @@ i {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--space-m);
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
+
+  font-size: var(--text-s);
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main-text-color-light);
 }
 
 #main-content .navbar li {
-  padding-left: var(--space-m);
-  padding-right: var(--space-m);
+  padding-left: var(--space-xs);
+  padding-right: var(--space-xs);
 }
 
 #main-content .navbar li a::after {
   content: "";
   display: block;
-  border-bottom: 1px solid green;
-  width: 50%;
+  border-bottom: 2px solid green;
+  width: 30px;
   margin: 0 auto;
   opacity: 0;
 }
