@@ -522,12 +522,14 @@ i {
 }
 
 #bottombar .progress-full {
-  /* width: 35%; */
+  width: 35%;
   height: 100%;
   background-color: var(--secondary-progress-color);
   border-radius: 4px;
   position: relative;
+}
 
+#bottombar .player .progress-full {
   animation-duration: 265s;
   animation-name: progress;
   animation-fill-mode: backwards;
