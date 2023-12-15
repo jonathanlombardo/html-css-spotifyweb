@@ -302,11 +302,14 @@ i {
   justify-content: flex-end;
   align-items: center;
 
-  padding-top: var(--space-m);
-  padding-bottom: var(--space-m);
+  padding-top: calc(var(--space-m) - 5px);
+  padding-bottom: calc(var(--space-m) - 5px);
 }
 
 #topbar .btn {
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
   background-color: var(--topbar-btn-color);
   margin-right: var(--space-m);
 }
