@@ -110,6 +110,10 @@
     width: calc(100% / 4);
   }
 
+  #main-content section .card-layer {
+    font-size: 3em;
+  }
+
   #bottombar .browse-wrapper {
     flex-direction: row;
   }
