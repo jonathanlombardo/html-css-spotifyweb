@@ -355,6 +355,8 @@ i {
 #main-content section {
   padding-left: var(--container-padding);
   padding-right: var(--container-padding);
+  padding-top: var(--space-s);
+  padding-bottom: var(--space-s);
 }
 
 #main-content section .col {
@@ -369,7 +371,31 @@ i {
   border-radius: 50%;
 }
 
-/* --recent */
+#main-content .section-title {
+  font-size: var(--text-m);
+  font-weight: 600;
+  padding-bottom: var(--space-s);
+}
+
+#main-content .section-subtitle {
+  font-size: var(--text-s);
+  font-weight: 600;
+  color: var(--main-text-color-light);
+}
+
+#main-content .card {
+  text-align: center;
+  font-weight: 600;
+}
+
+#main-content .card-title {
+  padding: var(--space-xs) 0;
+}
+
+#main-content .card-subtitle {
+  color: var(--main-text-color-light);
+  font-size: var(--text-s);
+}
 
 /* ##BOTTOMBAR */
 
