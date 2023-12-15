@@ -1,3 +1,19 @@
+/* ## XS VIEW */
+@media screen and (min-width: 462px) {
+  .xs-d-none {
+    display: none;
+  }
+
+  .xs-d-block {
+    display: block;
+  }
+
+  #bottombar .settings {
+    width: 150px;
+    min-width: 105px;
+  }
+}
+
 /* ## S VIEW */
 @media screen and (min-width: 576px) {
   /* ##display */
@@ -70,7 +86,7 @@
 
   /* --onair */
 
-  #bottombar .on-air-desc {
+  /* #bottombar .on-air-desc {
     max-width: 150px;
   }
 
@@ -81,7 +97,7 @@
   #bottombar .settings .progress {
     width: 80px;
     margin: auto;
-  }
+  } */
 }
 
 /* ## MD VIEW */
@@ -95,12 +111,12 @@
   }
 
   #bottombar .browse-wrapper {
-    display: flex;
+    flex-direction: row;
   }
 
-  #bottombar .settings .progress {
-    width: 100px;
-    margin: auto;
+  #bottombar .settings,
+  #bottombar .browse-wrapper {
+    gap: var(--space-s);
   }
 }
 

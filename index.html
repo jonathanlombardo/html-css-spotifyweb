@@ -15,7 +15,7 @@
     <meta name="author" content="Jibbo" />
 
     <!-- --FONTAWSOME STYLE LINK -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- --GOOGLE FONTS LINK -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,7 +36,7 @@
         <nav id="sidebar" class="d-flex">
           <ul id="sidebar-elements" class="d-flex">
             <li>
-              <a href="#" class="logo logo-big xs-d-none s-d-block"><img src="./img/logo.svg" alt="Spotify logo" /></a>
+              <a href="#" class="logo logo-big xxs-d-none s-d-block"><img src="./img/logo.svg" alt="Spotify logo" /></a>
             </li>
             <li>
               <a href="#" class="logo logo-small s-d-none"><img src="./img/logo-small.svg" alt="Spotify logo" /></a>
@@ -44,34 +44,34 @@
             <li class="hov-active">
               <a href="#" id="home-wrapper" class="top-wrapper d-flex">
                 <img src="./img/home.svg" alt="Home" class="icon" />
-                <div class="label xs-d-none s-d-block">Home</div>
+                <div class="label xxs-d-none s-d-block">Home</div>
               </a>
             </li>
 
             <li class="hov-active">
               <a href="#" id="search-wrapper" class="top-wrapper d-flex">
                 <img src="./img/search.svg" alt="Find" class="icon" />
-                <div class="label xs-d-none s-d-block">Cerca</div>
+                <div class="label xxs-d-none s-d-block">Cerca</div>
               </a>
             </li>
 
             <li class="hov-active">
               <a href="#" id="library-wrapper" class="top-wrapper d-flex">
                 <img src="./img/libreria.svg" alt="My library" class="icon" />
-                <div class="label xs-d-none s-d-block">La tua libreria</div>
+                <div class="label xxs-d-none s-d-block">La tua libreria</div>
               </a>
             </li>
 
-            <li class="xs-d-none s-d-block">
+            <li class="xxs-d-none s-d-block">
               <div class="tab-title">PLAYLIST</div>
             </li>
-            <li class="xs-d-none s-d-block">
+            <li class="xxs-d-none s-d-block">
               <a href="#" id="create-wrapper" class="d-flex">
                 <img src="./img/square-plus.svg" alt="" class="icon" />
                 <div class="label">Crea Playlist</div>
               </a>
             </li>
-            <li id="playlist-wrapper" class="xs-d-none s-d-block">
+            <li id="playlist-wrapper" class="xxs-d-none s-d-block">
               <ul>
                 <li class="playlist-item"><a href="#">Nome Playlist molto lungo</a></li>
                 <li class="playlist-item"><a href="#">Nome Playlist</a></li>
@@ -88,13 +88,13 @@
                 <li>
                   <a href="#" id="install-wrapper" class="d-flex">
                     <img src="./img/download.svg" alt="" class="icon" />
-                    <div class="label xs-d-none s-d-block">Installa app</div>
+                    <div class="label xxs-d-none s-d-block">Installa app</div>
                   </a>
                 </li>
                 <li>
                   <div href="#" id="profile-wrapper" class="d-flex">
                     <a href="#"><img src="./img/profile.svg" alt="" class="icon" /></a>
-                    <a href="#" class="label xs-d-none s-d-block">John Doe</a>
+                    <a href="#" class="label xxs-d-none s-d-block">John Doe</a>
                   </div>
                 </li>
               </ul>
@@ -234,49 +234,51 @@
       <!-- ##BOTTOMBAR -->
       <footer id="bottombar" class="d-flex">
         <div class="on-air-wrapper d-flex">
-          <!-- <div class="on-air-image"> -->
-          <img src="./img/metal_lifting.jpg" alt="on-air" />
-          <!-- </div> -->
-
-          <div class="on-air-desc">
-            <div class="title">TITOLO</div>
-            <div class="subtitle">sotto titolo</div>
-            <div class="subtitle">sotto titolo</div>
+          <div class="on-air-image">
+            <img src="./img/metal_lifting.jpg" alt="on-air" />
           </div>
 
-          <div class="browse-wrapper">
-            <div class="wish"><i>X</i></div>
-            <div class="browse"><i>X</i></div>
+          <div class="on-air-desc">
+            <div class="title">Sinister</div>
+            <div class="subtitle">
+              <a href="#">Brano</a>
+              <a href="#">Nome</a>
+            </div>
+          </div>
+
+          <div class="browse-wrapper d-flex">
+            <a href="#" class="wish"><i class="fa-regular fa-heart fa-xl"></i></a>
+            <a href="#" class="browse"><i class="fa-regular fa-folder fa-xl"></i></a>
           </div>
         </div>
 
         <div class="player">
-          <div class="nav-song">
-            <i class="random">X</i>
-            <i class="previous">X</i>
-            <i class="play">X</i>
-            <i class="next">X</i>
-            <i class="repit">X</i>
+          <div class="nav-song d-flex">
+            <i class="random fa-solid fa-shuffle"></i>
+            <i class="previous fa-solid fa-backward-step"></i>
+            <i class="play fa-regular fa-circle-play"></i>
+            <i class="next fa-solid fa-forward-step"></i>
+            <i class="repit fa-solid fa-rotate-right"></i>
           </div>
+
           <div class="progress-wrapper d-flex">
             <div class="start-time">0:25</div>
-            <div class="progress">
-              <div class="progress-empty">
-                <div class="progress-full"></div>
-              </div>
+
+            <div class="progress-empty">
+              <div class="progress-full"></div>
             </div>
+
             <div class="end-time">4:25</div>
           </div>
         </div>
 
         <div class="settings d-flex">
-          <div class="queue"><i>X</i></div>
-          <div class="cast-song"><i>X</i></div>
-          <div class="volume"><i>X</i></div>
-          <div class="progress">
-            <div class="progress-empty">
-              <div class="progress-full"></div>
-            </div>
+          <i class="queue fa-solid fa-list-ul"></i>
+          <i class="cast-song fa-solid fa-desktop xxs-d-none xs-d-block"></i>
+          <i class="volume fa-solid fa-volume-high"></i>
+
+          <div class="progress-empty xxs-d-none xs-d-block">
+            <div class="progress-full"></div>
           </div>
         </div>
 
