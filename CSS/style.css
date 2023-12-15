@@ -316,6 +316,11 @@ i {
   margin-right: var(--space-m);
 }
 
+#topbar .btn:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
 /* #MAINCONTENT */
 
 /* --navbar */
