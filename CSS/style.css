@@ -47,6 +47,7 @@ i {
   --space-l: 50px;
 
   --bottombar-hegth: 60px;
+  --active-border-w: 4px;
 
   /* palette */
   --main-color: #141922;
@@ -203,18 +204,50 @@ i {
 
 /* --general */
 #sidebar {
+  overflow: auto;
   background-color: var(--sidebar-color);
-  padding-left: var(--space-s);
-  padding-right: var(--space-s);
+  padding: var(--space-s);
+  gap: var(--space-s);
   flex-direction: column;
-  max-width: 200px;
+
+  max-width: 180px;
+
+  font-size: 0.75rem;
+  color: var(--main-text-color);
+  font-weight: 700;
 
   /* debug */
-  min-width: 50px;
+  /* min-width: 50px; */
 }
+
 #sidebar-elements {
   height: 100%;
   flex-direction: column;
+  gap: var(--space-s);
+}
+
+#sidebar .logo-big {
+  width: 120px;
+}
+
+#sidebar .icon,
+#sidebar .logo-small {
+  width: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sidebar #install-wrapper .icon {
+  width: 18px;
+}
+
+#sidebar #install-wrapper {
+  padding-bottom: var(--space-s);
+}
+
+#sidebar #profile-wrapper .icon {
+  border-radius: 50%;
+  background-color: #777777;
 }
 
 #sidebar .label {
@@ -234,6 +267,7 @@ i {
 
 #sidebar #playlist-wrapper {
   flex-shrink: 1;
+  min-height: 70px;
   overflow: auto;
 }
 
@@ -241,6 +275,7 @@ i {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-bottom: var(--space-s);
 }
 
 /* --sidebar-bottom */
