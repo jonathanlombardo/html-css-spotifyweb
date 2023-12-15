@@ -533,7 +533,7 @@ i {
 #bottombar .player .progress-full {
   animation-duration: 265s;
   animation-name: progress;
-  animation-fill-mode: backwards;
+  animation-fill-mode: both;
   animation-timing-function: linear;
 }
 
